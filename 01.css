@@ -1,4 +1,4 @@
-/* Import Fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Manrope:wght@400;500;700&display=swap");
 
 :root {
@@ -23,7 +23,7 @@ body {
   min-height: 100vh;
 }
 
-/* Container chính sát lề */
+
 .main-wrapper {
   width: 95%;
   max-width: 1200px;
@@ -31,7 +31,7 @@ body {
   padding: 10px 0;
 }
 
-/* Nav sát 2 góc */
+
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -51,7 +51,7 @@ body {
   font-size: 1rem;
 }
 
-/* Header & Search */
+
 header h1 {
   font-family: "Fraunces", serif;
   font-size: clamp(2rem, 6vw, 3.5rem);
@@ -81,7 +81,7 @@ header h1 {
   font-size: 1rem;
 }
 
-/* KHUNG VIỀN LỚN (Trong suốt hoàn toàn) */
+
 .main-border-box {
   border: 2px solid var(--color-border-thick);
   border-radius: var(--radius-lg);
@@ -100,7 +100,7 @@ header h1 {
   font-weight: 700;
 }
 
-/* --- SPOT LIST: LUÔN LÀ 1 CỘT --- */
+
 .spot-list {
   display: flex;
   flex-direction: column;
@@ -108,15 +108,15 @@ header h1 {
   width: 100%;
 }
 
-/* THẺ ĐỊA ĐIỂM: HÌNH CHỮ NHẬT NẰM NGANG */
+
 .spot-card {
   display: flex;
-  flex-direction: row; /* Chữ trái, nút phải */
+  flex-direction: row; 
   justify-content: space-between;
   align-items: center;
 
   padding: 25px 30px;
-  min-height: 120px; /* Chiều cao vừa đủ để tạo hình chữ nhật ngang */
+  min-height: 120px;
 
   border-radius: var(--radius-md);
   background-size: cover;
@@ -128,7 +128,7 @@ header h1 {
 }
 
 .spot-card:hover {
-  transform: translateX(10px); /* Hiệu ứng nhích nhẹ sang phải khi hover */
+  transform: translateX(10px); 
   border-color: #ffffff;
 }
 
@@ -139,7 +139,7 @@ header h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.45); /* Phủ tối để nổi bật chữ */
+  background: rgba(0, 0, 0, 0.45); 
   z-index: 1;
 }
 
@@ -171,7 +171,7 @@ header h1 {
   transition: 0.3s;
   backdrop-filter: blur(5px);
   font-weight: 700;
-  white-space: nowrap; /* Không cho chữ View xuống dòng */
+  white-space: nowrap; 
 }
 
 .btn-view:hover {
@@ -179,7 +179,7 @@ header h1 {
   color: #000000;
 }
 
-/* Tùy chỉnh cho mobile cực nhỏ */
+
 @media (max-width: 480px) {
   .spot-card {
     padding: 20px;
